@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81464fa-ad12-4e6e-bda6-5ae95ce40427" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dictionary" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dictionary/lib/dictionary.ex" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/lib/dictionary.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dictionary/lib/lists.ex" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/lib/lists.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hangman/lib/hangman.ex" beforeDir="false" afterPath="$PROJECT_DIR$/hangman/lib/hangman.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hangman/lib/hangman/game.ex" beforeDir="false" afterPath="$PROJECT_DIR$/hangman/lib/hangman/game.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hangman/test/game_test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/hangman/test/game_test.exs" afterDir="false" />
     </list>
@@ -56,7 +56,8 @@
       <updated>1576263660526</updated>
       <workItem from="1576263661944" duration="10603000" />
       <workItem from="1576512171622" duration="623000" />
-      <workItem from="1576516557486" duration="8478000" />
+      <workItem from="1576516557486" duration="8745000" />
+      <workItem from="1576600005118" duration="1034000" />
     </task>
     <servers />
   </component>
