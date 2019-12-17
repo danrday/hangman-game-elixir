@@ -17,7 +17,8 @@ defmodule Hangman.Game do
     new_game(Dictionary.random_word)
   end
 
-  def make_move(game = %{game_state: state}, _guess) when state in [:won, :lost]do
+#  don't understand this pattern matching
+  def make_move(%{game_state: state} = game, _guess) when state in [:won, :lost]do
     {game, tally(game)}
   end
 
@@ -30,7 +31,7 @@ defmodule Hangman.Game do
     Map.put(game, :game_state, :already_used)
   end
 
-  def accept_move( game, guess, _already_guessed) do
+  def accept_move( game, guess, _not_already_guessed) do
     Map.put(game, :used, MapSet.put(game.used, guess))
     |> score_guess(Enum.member?(game.letters, guess))
   end
@@ -42,8 +43,15 @@ defmodule Hangman.Game do
     Map.put(game, :game_state, new_state)
   end
 
-  def score_guess(game, _not_good_guess) do
-    game
+  def score_guess(game = %{turns_left: 1}, _not_good_guess) do
+    Map.put(game, :game_state, :lost)
+  end
+
+  def score_guess(game = %{turns_left: turns_left}, _not_good_guess) do
+    %{game |
+      game_state: :bad_guess,
+      turns_left: turns_left - 1
+    }
   end
 
   def tally(game) do
